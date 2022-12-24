@@ -1,9 +1,117 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back-outline" routerLink="/welcome" size="large" class="ion-padding"></ion-icon>
+    </ion-buttons>
+    <ion-icon name="person-circle-outline" slot="end" size="large" class="ion-padding"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-text class="ion-text-center">
+    <h1>Perfil</h1>
+  </ion-text>
 
+  <ion-card-title class="ion-padding">Datos usuario</ion-card-title>
+  <ion-card>
+  
+    <ion-card-content>
+      <h2>Nombre: Jose Luis H</h2>
+      <h2>Correo electronico: hola@gmail.com</h2>
+    </ion-card-content>
+  
+    <div class="my-button-change">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+    <ion-button color="primary" routerLink="/reset" type="submit" class="ion-text-center ion-text-capitalize">
+      Cambiar contraseña
+    </ion-button>
+      </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div class="my-button-photo">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+    <ion-button color="primary" type="submit" class="ion-text-center ion-text-capitalize">
+      Subir foto de perfil
+    </ion-button>
+      </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    
+  </ion-card>
+
+  <ion-card-title class="ion-padding">Datos vehiculo</ion-card-title>
+  <ion-card>
+  
+    <ion-card-content>
+      <h2>Marca: Suzuki</h2>
+      <h2>Modelo: Swift</h2>
+      <h2>Año: 2020</h2>
+      <h2>Nro. Chasis: ghtrth834</h2>
+      <h2>Km: 0</h2>
+    </ion-card-content>
+  
+    <div class="my-button-upload">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+    <ion-button color="primary" type="submit" class="ion-text-center ion-text-capitalize">
+      Subir foto vehiculo
+    </ion-button>
+      </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div class="my-button-watch">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+    <ion-button color="primary" type="submit" class="ion-text-center ion-text-capitalize">
+      Ver foto vehiculo
+    </ion-button>
+      </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+  </ion-card>
+
+  <ion-card-title class="ion-padding">Documentos</ion-card-title>
+  <ion-card>
+  
+    <ion-card-content>
+      <ion-list lines="full">
+        <ion-item>
+          <ion-label>Permiso circulacion</ion-label>
+          <ion-button color="primary" type="submit">Subir foto</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-label>Seguro</ion-label>
+          <ion-button color="primary" type="submit">Subir foto</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-label>Revision tecnica</ion-label>
+          <ion-button color="primary" type="submit">Subir foto</ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="line">
+  <ion-button size="large" expand="full">
+    <ion-icon slot="start" name="home-outline"></ion-icon>
+    Inicio
+  </ion-button>
+  <ion-button size="large" expand="full">
+    <ion-icon slot="start" name="person-outline"></ion-icon>
+    Perfil
+  </ion-button>
+  </div>
 </ion-content>
